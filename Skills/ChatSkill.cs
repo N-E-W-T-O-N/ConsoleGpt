@@ -22,7 +22,8 @@ namespace console_gpt.Skills
 
         {
             _kernel = kernel;
-            // Already Injected IN Program.cs 
+            /*
+            Already Injected IN Program.cs 
             if (chatOptions.Value.Type == ModelServiceType.OpenAI)
             {
                 // Set up the chat request settings
