@@ -22,6 +22,7 @@ namespace console_gpt.Skills
 
         {
             _kernel = kernel;
+            // Already Injected IN Program.cs 
             if (chatOptions.Value.Type == ModelServiceType.OpenAI)
             {
                 // Set up the chat request settings
@@ -71,7 +72,7 @@ namespace console_gpt.Skills
                 _chatCompletion = _kernel.GetRequiredService<IChatCompletionService>();
 
                 _chatHistory = new ChatHistory(chatOptions.Value.AzureOpenAI.SystemPrompt ?? "YOU ARE CHAT BOT");
-            }
+            }*/
         }
 
         /// <summary>
